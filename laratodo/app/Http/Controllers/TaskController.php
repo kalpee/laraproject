@@ -7,6 +7,7 @@ use App\Models\Folder;
 use App\Models\Task;
 use App\Http\Requests\CreateTask;
 use App\Http\Requests\EditTask;
+use Illuminate\Support\Facades\Auth;
 
 class TaskController extends Controller
 {
@@ -48,8 +49,10 @@ class TaskController extends Controller
 
         $current_folder->tasks()->save($task);
 
+        $logId = Auth::id();
+
         return redirect()->route("tasks.index", [
-            "id" => $current_folder->id,
+            "id" => $logId,
         ]);
     }
 

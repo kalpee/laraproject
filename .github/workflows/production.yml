@@ -2,7 +2,8 @@ name: Deploy
 
 on: # トリガーの設定
   push:
-    branches: -master # ブランチの指定
+    branches:
+      - master # ブランチの指定
 
 jobs:
   deploy:

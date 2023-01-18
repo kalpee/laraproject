@@ -8,6 +8,7 @@
   @yield('styles')
   <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
 </head>
+
 <body>
 <header>
   <nav class="my-navbar">

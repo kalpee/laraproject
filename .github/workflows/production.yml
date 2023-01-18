@@ -19,5 +19,9 @@ jobs:
           server: ${{ secrets.PROD_SERVER }} # FTPのサーバーアドレス
           username: ${{ secrets.PROD_USERNAME }} # FTPのユーザー名
           password: ${{ secrets.PROD_PASSWORD }} # FTPのパスワード
+<<<<<<< HEAD
           local-dir: ./laraproject/ # アップロードしたいファイルのパス、この場合srcディレクトリ内をアップロード対象としている
+=======
+          local-dir: ./ # アップロードしたいファイルのパス、この場合srcディレクトリ内をアップロード対象としている
+>>>>>>> dev
           server-dir: /public_html/laraproject/ # アップロード先のリモートパス

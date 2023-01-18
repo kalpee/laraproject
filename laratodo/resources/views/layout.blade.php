@@ -7,6 +7,7 @@
   <title>ToDo App</title>
   @yield('styles')
   <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+  
 </head>
 
 <body>
